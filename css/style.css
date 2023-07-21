@@ -20,4 +20,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.value-box.fizz-buzz {
+  background-color: #f0466f;
+}
+
+.value-box.fizz {
+  background-color: #0cd6a1;
+}
+
+.value-box.buzz {
+  background-color: #ffd166;
 }
