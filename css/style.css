@@ -1,0 +1,23 @@
+body {
+  background-color: #083b4c;
+}
+
+#container h1 {
+  font-size: 4rem;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.value-box {
+  width: 100px;
+  aspect-ratio: 1/1;
+  background-color: #1389b2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,22 +1,25 @@
-const domContainerEl = document.getElementById("container");
-const unorderedListEL = document.createElement("ul");
-domContainerEl.append(unorderedListEL);
+const domRowEl = document.getElementById("target-row");
 
 for (let i = 1; i <= 100; i++) {
-  const listItem = document.createElement("li");
-  unorderedListEL.append(listItem);
+  const colEl = document.createElement("div");
+  domRowEl.append(colEl);
+  const valueBoxEl = document.createElement("div");
+  colEl.append(valueBoxEl);
 
   if (i % 5 == 0 && i % 3 == 0) {
     console.log("FizzBuzz");
-    listItem.innerHTML = "FizzBuzz";
+    valueBoxEl.innerHTML = "FizzBuzz";
   } else if (i % 3 == 0) {
     console.log("Fizz");
-    listItem.innerHTML = "Fizz";
+    valueBoxEl.innerHTML = "Fizz";
   } else if (i % 5 == 0) {
     console.log("Buzz");
-    listItem.innerHTML = "Buzz";
+    valueBoxEl.innerHTML = "Buzz";
   } else {
     console.log(i);
-    listItem.innerHTML = i;
+    valueBoxEl.innerHTML = i;
   }
+
+  colEl.classList.add("col");
+  valueBoxEl.classList.add("value-box");
 }
